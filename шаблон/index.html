@@ -95,9 +95,9 @@
 
         function setbackground()
             {
-                window.setTimeout( "setbackground()", 5000); // 5000 milliseconds delay
+                window.setTimeout( "setbackground()", 10000); // 5000 milliseconds delay
 
-                let index = Math.round(Math.random() * 3);
+                let index = Math.round(Math.random() * 2);
 
                 let ImageValue = "img/back_1.webp"; // default Image (index = 0)
 
@@ -105,8 +105,8 @@
                 ImageValue = "img/back_1.webp";
                 if(index == 2)
                 ImageValue = "img/back_2.webp";
-                if(index == 3)
-                ImageValue = "img/back_4.webp";
+//                 if(index == 3)
+//                 ImageValue = "img/back_4.webp";
 
                 document.querySelector('.cont').style.backgroundImage =  "url(" + ImageValue +")" ;
 
